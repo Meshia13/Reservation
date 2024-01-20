@@ -1,0 +1,85 @@
+body 
+{
+  background-image: linear-gradient(AliceBlue, SkyBlue); 
+  font-family: "Lucida Console";
+  text-align:center;
+  border-style: solid;
+}
+
+.header 
+{
+  padding: 10px;
+  background: grayscale;
+  color: black;
+  font-size: 30px;
+  border-bottom-style: double;
+
+}
+#borderimg {
+  border: 10px solid transparent;
+  padding: 15px;
+}
+
+
+#checkAvailability
+{
+  width: 200px;
+  height:30px;
+}
+
+/* Set transition for buttons to change color when hovering for the alloted time */
+#userDiv button
+{
+  transition-duration: 0.4s;
+  width: 200px;
+  height:30px;
+}
+
+#userDiv button: hover
+{
+  background-color: teal; 
+  color: white;
+}
+
+#submitReservation
+{
+  width: 200px;
+  height:30px;
+}
+
+/* Set transition for buttons to change color when hovering for the alloted time */
+#restartDiv button 
+{
+  transition-duration: 0.4s;
+}
+
+#restartDiv button:hover 
+{
+
+  color: white;
+}
+
+
+/*stlying for buttons*/
+.container input[type='radio'] 
+{
+  float: left; 
+  width: 20px; 
+  margin: auto;
+}
+
+.container label 
+{
+  float: left; 
+  width: 1000px;
+}
+
+input 
+{
+  margin: 8px;
+}
+
+#openDates 
+{
+  visibility: hidden;
+}

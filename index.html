@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Reservation Capstone</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <div class='header'>
+    <h1>Reservation</h1>
+  </div>
+
+  <!--   reservation form -->
+  <div>
+    <!--    Collect users name  -->
+    <label for="Full_name">
+      Full Name:
+    </label>
+    <input type="text" id="name" name="Full_name"><br>
+    <!--  select a date -->
+    <label for="date">
+      Select a Date:
+    </label>
+    <input type="date" id="date"><br>
+    <!--   Number of guests     -->
+    <label for="guests">
+      Number of Guests:
+    </label>
+    <input type="number" id="guests" min="1"><br>
+    <!--  Check availability      -->
+    <button id="checkAvailability">
+      Check Availability
+    </button>
+    <ul id="openDates"> Open Dates:</ul>
+  </div>
+
+  <div id="userDiv">
+    <h4>Let's create a custom meal plan for you!</h4>
+    <p>
+      Type in the type of diet you would like to follow.<br>
+      Choose between vegan, vegetarian, mediterranean, or keto.<br>
+      I will provide five(5) meals for you to try.<br>
+    </p>
+
+    <label for='diet'>Dietary Restrictions:</label><br>
+    <input type='text' id='diet' placeholder="vegan, vegetarian, keto, mediterranean">
+
+    <button onclick='userInput()' id="mealButton">Meals</button>
+</div>
+  
+     <div class='container'>
+<!--    <form action=''> -->
+    
+  <ul id="meal-list"></ul>
+<!--       </form> -->
+    </div>
+
+  </div>
+  <button id="submitReservation">
+    Submit Reservation
+  </button>
+
+  <div id='restartDiv'>
+    <br>
+    <br>
+    <button onclick='history.go(0)' id="refreshButton">Refresh</button>
+
+
+
+  </div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
